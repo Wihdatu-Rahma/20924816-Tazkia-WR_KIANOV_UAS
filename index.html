@@ -1,0 +1,168 @@
+<!DOCTYPE html>
+<!-- Halaman dasar html -->
+<html lang="id"> 
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>KIANOV - Toko Fashion Online</title>
+   <link rel="stylesheet" href="CSS/styles.css">
+</head>
+<body>
+    <header>
+        <!-- header container pada sebuah website berfungsi sebagai wadah utama yang mengelompokkan elemen-elemen penting  -->
+        <div class="header-container">
+            <h1>KIANOV</h1>
+            <button class="menu-toggle" onclick="toggleMenu()">☰</button>
+            <div class="cart-section">
+                <a href="javascript:void(0)" class="cart-icon" onclick="toggleCart()">
+                    🛒
+                    <span class="cart-count">0</span>
+                </a>
+            </div>
+        </div> 
+          <!-- Navigasi utama -->
+        <nav>
+            <div class="nav-menu" id="navMenu">
+                <a href="#beranda">Beranda</a>
+                <a href="#produk">Produk</a>
+                <a href="#kategori">Kategori</a>
+                <a href="#tentang">Tentang Kami</a>
+                <a href="#kontak">Kontak</a>
+            </div>
+        </nav>
+    </header>
+          <!-- beranda pada sebuah website sebagai area pertama yang dilihat pengunjung saat membuka halaman.  -->
+    <main>
+        <section id="beranda" class="hero">
+            <h2>Selamat Datang di KIANOV</h2>
+            <p>Koleksi Fashion Terbaik untuk Gaya Hidup Modern Anda</p>
+        </section>
+          <!-- Daftar produk sebagai produk yang akan dipilih -->
+        <article class="produk-item">
+            <a href="produk1.html">
+                <img src="Images/Produk 1.jpg" alt="Kardigan Oversized Lengan Balon">
+            </a>
+            <h3>
+                <a href="produk1.html">Kardigan Oversized</a>
+            </h3>
+            <div class="price">Rp 200.000</div>
+            <p>...</p>
+            <div class="button-group">
+                <a href="produk1.html" class="btn-beli">Lihat Detail</a>
+            </div>
+        </article>
+        
+        <article class="produk-item">
+            <a href="produk2.html">
+                <img src="Images/Produk 2.jpg" alt="Kardigan Rajut Klasik">
+            </a>
+            <h3>
+                <a href="produk2.html">Kardigan Rajut Klasik</a>
+            </h3>
+            <div class="price">Rp 195.000</div>
+            <p>...</p>
+            <div class="button-group">
+                <a href="produk2.html" class="btn-beli">Lihat Detail</a>
+            </div>
+        </article>
+
+        <article class="produk-item">
+            <a href="produk3.html">
+                <img src="Images/Produk 3.jpg" alt="Kardigan Minimalis">
+            </a>
+            <h3>
+                <a href="produk3.html">Kardigan Minimalis</a>
+            </h3>
+            <div class="price">Rp 170.000</div>
+            <p>...</p>
+            <div class="button-group">
+                <a href="produk3.html" class="btn-beli">Lihat Detail</a>
+            </div>
+        </article>
+
+        <article class="produk-item">
+            <a href="produk4.html">
+                <img src="Images/Produk 4.png" alt="Blazer Formal">
+            </a>
+            <h3>
+                <a href="produk4.html">Blazer Formal</a>
+            </h3>
+            <div class="price">Rp 250.000</div>
+            <p>...</p>
+            <div class="button-group">
+                <a href="produk4.html" class="btn-beli">Lihat Detail</a>
+            </div>
+        </article>
+
+        <article class="produk-item">
+            <a href="produk5.html">
+                <img src="Images/Produk 5.jpg" alt="Sweater Casual">
+            </a>
+            <h3>
+                <a href="produk5.html">Sweater Casual</a>
+            </h3>
+            <div class="price">Rp 180.000</div>
+            <p>...</p>
+            <div class="button-group">
+                <a href="produk5.html" class="btn-beli">Lihat Detail</a>
+            </div>
+        </article>
+          <!-- kategori sebagai pilihan produk jenis pakaian -->
+        <section id="kategori" class="kategori">
+            <h2>Kategori Produk</h2>
+            <div class="kategori-grid">
+                <div class="kategori-item" onclick="filterKategori('kardigan')">
+                    <div class="kategori-icon">🧥</div>
+                    <h3>Kardigan</h3>
+                    <p>Koleksi kardigan trendy</p>
+                </div>
+                <div class="kategori-item" onclick="filterKategori('blazer')">
+                    <div class="kategori-icon">👔</div>
+                    <h3>Blazer</h3>
+                    <p>Blazer formal dan casual</p>
+                </div>
+                <div class="kategori-item" onclick="filterKategori('sweater')">
+                    <div class="kategori-icon">👕</div>
+                    <h3>Sweater</h3>
+                    <p>Sweater nyaman dan stylish</p>
+                </div>
+            </div>
+        </section>         
+          <!-- Tentang sebagai informasi singkat mengenai brand -->
+        <section id="tentang" class="tentang">
+            <h2>Tentang Kami</h2>
+            <p>
+                KIANOV adalah brand fashion yang menghadirkan koleksi pakaian berkualitas tinggi dengan desain modern dan elegan. 
+                Kami berkomitmen untuk memberikan produk fashion terbaik yang tidak hanya mengikuti tren terkini, tetapi juga 
+                memberikan kenyamanan maksimal bagi penggunanya. Dengan pengalaman yang cukup baik dalam industri fashion, 
+                KIANOV telah menjadi pilihan utama untuk mereka yang menghargai kualitas dan style. Setiap produk kami dibuat 
+                dengan perhatian detail dan menggunakan bahan berkualitas premium untuk memastikan kepuasan pelanggan.
+            </p>
+        </section>
+    </main>
+      <!-- Kontak sebagai jembatan utama yang menghubungkan pengunjung dengan pemilik atau pengelola website.  -->
+    <footer id="kontak">
+        <div class="footer-content">
+            <div class="footer-links">
+                <a href="#privacy">Kebijakan Privasi</a>
+                <a href="#terms">Syarat & Ketentuan</a>
+                <a href="#help">Bantuan</a>
+                <a href="#contact">Hubungi Kami</a>
+                <a href="#return">Pengembalian</a>
+            </div>
+            <p>&copy; 2025 KIANOV Fashion Store. Hak Cipta Dilindungi.</p>
+            <p>Email: Kianov@info.com | WhatsApp: +62 8976543212 | Instagram: @kianov.official
+                | Alamat: Jl. Bunga Matahari No.14 - 16, Sudirman, Kota Bandung, Jawa Barat</p>
+        </div>
+    </footer>
+    <!-- Script eksternal untuk interaktivitas -->
+    <script src="CSS/styles.css"></script>
+    <script src="JS/script.js"></script>
+     <!-- Popup keranjang belanja agar ada notifikasi keranjang belanja -->
+    <div id="cartPopup" style="display:none; position:fixed; top:60px; right:20px; width:320px; max-height:400px; overflow-y:auto; background:#fff; border:1px solid #ccc; border-radius:8px; box-shadow:0 4px 12px rgba(0,0,0,0.1); padding:1rem; z-index:1000;">
+        <h3>Keranjang Belanja</h3>
+        <ul id="cartItemsList" style="list-style:none; padding:0; margin:0 0 1rem 0;"></ul>
+        <button onclick="closeCart()" style="background:#6c226e; color:#fff; border:none; padding:0.5rem 1rem; border-radius:4px; cursor:pointer;">Tutup</button>
+    </div>
+</body>
+</html>

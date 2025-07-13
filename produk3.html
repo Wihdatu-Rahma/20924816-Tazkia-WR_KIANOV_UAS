@@ -1,0 +1,58 @@
+<!DOCTYPE html>
+<html lang="id">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Kardigan Minimalis - KIANOV</title>
+    <link rel="stylesheet" href="CSS/styles.css">
+</head>
+<body>
+    <header>
+        <div class="header-container">
+            <h1>KIANOV</h1>
+            <button class="menu-toggle" onclick="toggleMenu()">☰</button>
+            <div class="cart-section">
+                <a href="javascript:void(0)" class="cart-icon" onclick="toggleCart()">
+                    🛒
+                    <span class="cart-count">0</span>
+                </a>
+            </div>
+        </div> 
+    </header>
+    <!-- Sebagai Informasi detail produk: gambar, nama, harga, deskripsi produk -->
+    <main>
+        <section class="produk-detail">
+            <img src="Images/Produk 3.jpg" alt="Kardigan Minimalis">
+            <div class="detail-info">
+                <h2>Kardigan Minimalis</h2>
+                <div class="price">Rp 170.000</div>
+                <p>Kardigan rajut minimalis dengan desain sederhana namun elegan. Dilengkapi dengan penutup kain sederhana di bagian depan. Potongan ringkas yang nyaman dan stylish, sangat cocok untuk melengkapi berbagai gaya busana dari kasual hingga semi formal.</p>
+                <button class="btn-keranjang" onclick="tambahKeKeranjang('Kardigan Minimalis', 170000)">Keranjang</button>
+            </div>
+        </section>
+    </main>
+    <!-- Kontak sebagai jembatan utama yang menghubungkan pengunjung dengan pemilik atau pengelola website.  -->
+    <footer>
+        <div class="footer-content">
+            <div class="footer-links">
+                <a href="#privacy">Kebijakan Privasi</a>
+                <a href="#terms">Syarat & Ketentuan</a>
+                <a href="#help">Bantuan</a>
+                <a href="#contact">Hubungi Kami</a>
+                <a href="#return">Pengembalian</a>
+            </div>
+            <p>&copy; 2025 KIANOV Fashion Store. Hak Cipta Dilindungi.</p>
+            <p>Email: Kianov@info.com | WhatsApp: +62 8976543212 | Instagram: @kianov.official
+                | Alamat: Jl. Bunga Matahari No.14 - 16, Sudirman, Kota Bandung, Jawa Barat</p>
+        </div>
+    </footer>
+    <!-- Popup Keranjang agar produk bisa dimasukan ke keranjang dan ada notifikasi-->
+    <script src="JS/script.js"></script>
+    <!-- Popup Keranjang -->
+<div id="cartPopup" style="display:none; position:fixed; top:60px; right:20px; width:320px; max-height:400px; overflow-y:auto; background:#fff; border:1px solid #ccc; border-radius:8px; box-shadow:0 4px 12px rgba(0,0,0,0.1); padding:1rem; z-index:1000;">
+    <h3>Keranjang Belanja</h3>
+    <ul id="cartItemsList" style="list-style:none; padding:0; margin:0 0 1rem 0;"></ul>
+    <button onclick="closeCart()" style="background:#6c226e; color:#fff; border:none; padding:0.5rem 1rem; border-radius:4px; cursor:pointer;">Tutup</button>
+</div>
+</body>
+</html>
