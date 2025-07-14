@@ -141,6 +141,15 @@ nav {
     border-color: rgb(18, 18, 43);
     transform: translateY(-2px);
 }
+.nav-menu {
+    display: none;
+    /* ... */
+}
+
+.nav-menu.active {
+    display: flex;
+}
+
 
 /* Main Content untuk mengatur tampilan dan tata letak area utama konten pada halaman website.*/
 main {
