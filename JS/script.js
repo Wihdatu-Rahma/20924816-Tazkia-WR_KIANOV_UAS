@@ -83,6 +83,13 @@ function closeCart() {
     if (popup) popup.style.display = 'none';
 }
 
+//Untuk mengatur navigasi agar sesuai halaman
+function toggleMenu() {
+    const navMenu = document.getElementById('navMenu');
+    navMenu.classList.toggle('active');
+}
+
+
 // Panggil saat halaman dimuat
 document.addEventListener('DOMContentLoaded', updateCartCount);
 
